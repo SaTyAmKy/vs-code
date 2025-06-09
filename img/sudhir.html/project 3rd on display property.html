@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.block{
+    display:block;
+    background-color: aqua;
+    margin:10px;
+    padding:5px
+
+
+}
+
+.inline{
+    display:inline;
+    background-color: blue;
+    margin:10px;
+    padding:5px;
+}
+
+.inline-block{
+    display:inline-block;
+    background-color: burlywood;
+    height:50px;
+    width:200px;
+    margin:10px;
+    padding:5px;
+}
+
+.flex-container{
+    display:flex;
+    background-color: blueviolet;
+    margin:10px;
+    padding:5px;
+}
+
+.grid-container{
+    display:grid;
+    background-color: cadetblue;
+    grid-template-columns:repeat(2,1fr);
+    gap: 10px;
+}
+
+.none{
+    display:none;
+}
+    </style>
+</head>
+<body>
+    <h1>CSS display property showcase</h1>
+
+    <section>
+        <h2>display :block</h2>
+        <div class="block">Block Element 1</div>
+        <div class="block">Block Element 2</div>
+    </section>
+
+    <section>
+        <h2>display :inline</h2>
+        <div class="inline">inline element 1</div>
+        <div class="inline">inline element 2</div>
+    </section>
+
+    <section>
+        <h2>display :inline block</h2>
+        <div class="inline-block">inline-block element 1</div>
+        <div class="inline-block">inline-block element 2</div>
+    </section>
+
+    <section>
+        <h2>display :flex</h2>
+        <div class="flex-container">
+        <div class="flex">flex element 1</div>
+        <div class="flex">flext element 2</div>
+        <div class="flex">flext element 3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>display :grid</h2>
+        <div class="grid-container">
+        <div class="grid">grid element 1</div>
+        <div class="grid">grid element 2</div>
+        <div class="grid">grid element 3</div>
+        <div class="grid">grid element 4</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>display :none</h2>
+        <p>this paragraph is visible.</p>
+        <p class="none">this paragraph is hidden using display :none.</p>
+    </section>
+</body>
+</html>
