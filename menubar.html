@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: content-box;
+
+        }
+        body{
+            background-color:rgb(240, 240, 239);
+        }
+        header{
+            background-color:white;
+            display:flex;
+            align-items: center;
+            justify-content:space-around;
+            height:80px;
+        }
+        header .search-box{
+            
+            width:700px;
+            height:40px;
+            position:relative;
+            margin:0px;
+            
+        }
+        header .search-box input{
+            width:100%;
+            height:100%;
+            border-radius: 7px;
+            border:none;
+            background-color:aliceblue;
+            padding-left: 45px;
+            
+
+        }
+        header .search-box input::placeholder{
+            font-size: 18px;
+        }
+        header .search-box > i{
+            position:absolute;
+            top:10px;
+            font-size: 25px;
+            color:rgb(179, 178, 178);
+            left:10px;
+        }
+
+        header .button-box{
+            
+            width:111px;
+            height:35px;
+            position: relative;
+            
+        }
+        header .button-box > button{
+            width:100%;
+            height:100%;
+            border:none;
+            border-radius: 10px;
+
+        }
+        header .button-box >button > i{
+            padding: 10px;
+        }
+        header .button-box .dropdown-box{
+            background-color:rgb(229, 226, 226);
+            margin-top: 10px;
+            display:none;
+            width:200px;
+        }
+        header .button-box .dropdown-box > li{
+            list-style: none;
+            margin-top: 10px;
+        }
+        header .button-box >button:hover{
+            background-color: rgb(54, 54, 390);
+        }
+        header .button-box:hover .dropdown-box{
+            display:block;
+            position:absolute;
+            z-index: 10;
+            transition:5s;
+        }
+        header .button-box .dropdown-box li:hover{
+           background-color: rgb(213, 212, 213);
+        }
+
+        header .anchor-tag a{
+            text-decoration: none;
+            color:black;
+            position:relative;
+        }
+        header .anchor-tag i{
+            padding:5px;
+        }
+        
+        header .sellor a{
+            text-decoration: none;
+            color:black;
+        }
+        header .seller i{
+            padding:5px;
+        }
+
+            
+
+        
+        footer nav{
+            /* background-color: blueviolet; */
+            display: flex;
+              gap:80px;
+              margin:50px;
+              padding: 20px;;
+              width:900px;
+
+        }
+        footer nav > li{
+            color:rgb(175, 172, 172);
+            list-style: none;
+          
+        }
+
+        footer nav li > #about{
+            margin-top: 15px;
+        }
+        footer nav li > #about >li{
+            color:whitesmoke;
+            list-style: none;
+        }
+        footer nav li > #group-companies{
+             margin-top: 15px;
+        }
+        footer nav li > #group-companies > li{
+             color:whitesmoke;
+            list-style: none;
+        }
+        footer nav li > #help{
+             margin-top: 15px;
+        }
+        footer nav li >  #help > li{
+             color:whitesmoke;
+            list-style: none; 
+        }
+        footer nav li > #consumer-policy{
+            margin-top: 15px;
+        }
+        footer nav li > #consumer-policy li{
+             color:whitesmoke;
+            list-style: none;  
+        }
+        footer .combine-nav-div > nav{
+            height:300px;
+            border-right: 1px solid white;
+        }
+        footer .combine-mail-register > nav{
+            height:300px;
+            width:500px;
+        }
+        footer .combine-mail-register > nav > li > #mail{
+            margin-top: 15px;
+            height:150px;
+            width:200px;
+            overflow-wrap: break-word;
+            color:white;
+        }
+        footer .combine-mail-register > nav > li > #register{
+            margin-top: 15px;
+            height:150px;
+            width:270px;
+            overflow-wrap: break-word;
+            color:white;
+        }
+        footer .combine-nav-div{ 
+            display:flex;
+            position:absolute;
+            border-bottom: 1px solid white;
+        
+
+        }
+         footer{
+            background-color: black;
+            position:absolute;
+            bottom:0;
+            height:500px;
+            width:100%;
+         }
+       
+       
+        
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+            
+            
+
+        
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="image.png" alt="loading...">
+        <div class="search-box">
+            <input type="text" placeholder="Search for Product ,Brand and More">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="button-box">
+            <button type="submit">
+                <i class="fa-solid fa-person"></i>
+               <span>login </span>  <i class="fa-solid fa-greater-than"></i></button>
+               <div class="dropdown-box">
+               <li>Clothes</li>
+               <li>Toys</li>
+               <li>Equipment</li>
+               <li>Food items</li>
+               <li>Electrical instrument</li>
+               </div>
+        </div>
+        <div class="anchor-tag">
+             <i class="fa-solid fa-cart-shopping"></i>
+            <a href="#">Cart</a>
+        </div>
+        <div class="sellor">
+            <i class="fa-solid fa-house"></i>
+            <a href="#">Become a Sellor</a>
+            
+        </div>
+        <div class="icon">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+    </header>
+    <footer>
+       <div class="combine-nav-div">
+        <nav>
+            <li>ABOUT
+                <ul id="about">
+                    <li>Contact Us</li>
+                    <li>About Us</li>
+                    <li>Careers</li>
+                    <li>Flipkart Stories</li>
+                    <li>Press</li>
+                    <li>Corporate Information</li>
+                </ul>
+            </li>
+            <li>GROUP COMPANIES
+                <ul id="group-companies">
+                    <li>Myntra</li>
+                    <li>Cleartrip</li>
+                    <li>Shopsy</li>
+                </ul>
+            </li>
+            <li>HELP
+                <ul id="help">
+                    <li>Payment</li>
+                    <li>Shipping</li>
+                    <li>Cancellation & returns</li>
+                    <li>FAQ</li>
+                </ul>
+            </li>
+            <li>CONSUMER POLICY
+                <ul id="consumer-policy">
+                    <li>Cancellation & Returns</li>
+                    <li>Terms & Use</li>
+                    <li>Security</li>
+                    <li>Privacy</li>
+                    <li>Sitemap</li>
+                    <li>Grievance Redressal</li>
+                    <li>EPR Compliance</li>
+                </ul>
+            </li>
+
+        </nav>
+        <div class="combine-mail-register">
+            <nav>
+                <li>Mail Us :
+                    <ul id="mail">
+                        <p>Flipkart Internet Private Limited,Buildings Alyssa Begonia & Clove Embassy Tech Vilaage,Outer Ring Road,Bengaluru,560103,karnataka,India </p>
+
+                    </ul>
+                </li>
+                <li>Register Office Address :
+                    <ul id="register">
+                         <p>Flipkart Internet Private Limited,Buildings Alyssa Begonia & Clove Embassy Tech Vilaage,Outer Ring Road,Bengaluru,560103,karnataka,India </p>
+                         <span>CIN :U51109KA2012PTC066107</span>
+                         <span>Telephone:044-45614700/044-67415800</span>
+                    </ul>
+                </li>
+
+            </nav>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>
