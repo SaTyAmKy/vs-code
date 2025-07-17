@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My tunes</title>
+    <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  rel="stylesheet"
+/>
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Libertinus+Mono&family=Manufacturing+Consent&family=Roboto:ital,wght@0,100..900;1,100..900&family=Twinkle+Star&display=swap');
+:root{
+   --purple500: #281154;
+   --purple300: #270082;
+   --purple600: #1b0058;
+   --red600: #dc0000;
+   --body: #f9f6ff;
+   --max-width:1200px;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: "Roboto",sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+header .container{
+    max-width: 1200px;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .container ul{
+    list-style: none;
+    display:flex;
+    gap:40px;
+}
+header .container .logo{
+    font-size: 32px;
+    font-weight: 600;
+    color:white;
+}
+header .container ul > a{
+    text-decoration: none;
+    color:white;
+}
+header{
+    background-color: var(--purple300);
+     position:sticky;
+    top:0;
+    z-index: 100;
+    box-shadow: 2px 5px 3px black;
+   
+}
+header .container ul li:hover{
+    border-bottom: 2px solid white;
+}
+header .container ul li{
+    border-bottom: 2px solid transparent;
+}
+main .hero_section{
+    background-image: url(https://tse2.mm.bing.net/th/id/OIP.2xMwUa-TyTiyCTyRqW7aNgHaE8?pid=Api&P=0&h=180);
+    background-size: cover;
+    background-repeat:no-repeat;
+    height:100vh;
+    display:grid;
+    place-items: center;
+    color:white;
+    text-align: center;
+    padding:50px;
+}
+main .hero_section .container{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+main .hero_section .container h1{
+    font-size: 90px;
+
+}
+main .hero_section .container h3{
+    font-size: 30px;
+}
+main .hero_section .container p{
+    text-align: justify;
+}
+main .music_section{
+    padding:100px;
+    background-color:var(--purple500) ;
+}
+main .music_section .container2 {
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+    justify-content: center;
+    align-items: center;
+    color:white;
+
+}
+main .music_section .container2 .iphone-ipad-img img{
+    height:500px;
+    width: 800px;
+}
+main .music_section .container2 .iphone-ipad-img{
+    margin-top:-300px;
+    position:relative;
+    top:300px;
+
+}
+button{
+    padding:10px 15px;
+    border:none;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    opacity:0.8;
+    transition: 0.2s ease-in-out;
+}
+main .music_section .container2 button{
+    background-color: var(--red600);
+    color:white;
+}
+main .about_music {
+    padding:0 100px;
+    padding-top: 300px;
+    display:grid;
+    place-items: center;
+    gap:50px;
+    text-align: center;
+
+}
+main .about_music > button{
+    background-color: var(--purple300);
+    color:white;
+}
+main .about_music .mac_img > img{
+    height:500px;
+    width:500px;
+}
+main .video_section{
+    background-image: url(https://tse4.mm.bing.net/th/id/OIP.VwmH0SnYL2gs64gbxzJMAwHaD2?pid=Api&P=0&h=180);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 800px;
+    display:grid;
+    align-items: center;
+    color:white;
+    text-align: center;
+    padding:0 100px;
+    
+}
+main .video_section .container3{
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+    margin-top:-100px;
+}
+main .card_content{
+    display:flex;
+    justify-content: center;
+    padding:0 200px;
+    
+}
+main .gift_card{
+    display:flex;
+    justify-content: center;
+    margin:100px 0;
+    gap:20px;
+}
+main .card_content .gift_card .gift_content{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+main .card_content .gift_card .gift_content button{
+
+     padding:10px 15px;
+    border:none;
+    transition: 0.2s ease-in-out;
+     background-color: var(--purple300);
+    color:white;
+    width:100px;
+}
+footer .footer_upper .container5{
+    display:flex;
+    justify-content: space-around;
+    background-color: rgb(71, 48, 2);
+    color:white;
+}
+.footer_lower{
+    text-align: end;
+}
+</style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                myTunes
+            </div>
+            <ul>
+               <a href="#hero">
+                <li>Overview</li>
+               </a>
+               <a href="#music">
+                <li>Music</li>
+               </a>
+               <a href="#video">
+                <li>Video</li>
+               </a>
+               <a href="#gift">
+                <li>Gift Card</li>
+               </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero_section" id="hero">
+            <div class="container">
+                <h1>my Tunes</h1>
+                <h3>Your music, movies, and TV shows take center stage.</h3>
+                <p>Welcome to MyTunes — your ultimate music companion. Whether you’re into timeless classics or the latest chart-toppers, MyTunes brings you a world of music right at your fingertips. Discover new artists, create personalized playlists, and stream your favorite songs anytime, anywhere. With a simple, elegant interface and a vast library of tracks, MyTunes lets you feel every beat and live every moment to its fullest. Turn up the volume, explore your vibe, and make every day sound better with MyTunes — where your music journey begins.</p>
+
+            </div>
+        </section>
+        <section class="music_section" id="music">
+            <div class="container2">
+                <h2>
+                    <span><i class="fa fa-music"></i></span> Music
+                </h2>
+                <h4>MyTunes is a music-focused platform that brings together users and artists worldwide. It allows listeners to explore a global music library, create and share playlists, discover new artists and cultures, and enjoy a personalized experience of music on the web. It embodies how the internet has made music universal, accessible, and collaborative.”</h4>
+                <button>Start Your Trial Now</button>
+                <p>nge music is available in myTunes, and for ios and Android devices.</p>
+                <div class="iphone-ipad-img">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.UT0ZlM0MRZIbqCBD7vZ1VQHaFW?pid=Api&P=0&h=180" alt="loading...">
+                </div>
+
+            </div>
+        </section>
+        <section class="about_music">
+            <h3>The movie and TV collection you wished for.Granted.</h3>
+            <p>MyTunes suggests songs, albums, and artists based on a user’s listening habits and preferences, making it easier to discover new favorites.
+Each artist has a profile page with their biography, full discography, popular songs, social links, and tour updates, so fans can connect more deeply.
+Users can quickly find music by searching song names, albums, artists, or genres and can filter results by mood, language, or popularity.
+Listeners can save favorite songs, albums, and playlists to their account and see their listening history anytime.
+Users can leave reviews, comment on songs or albums, and interact with others in a global music-loving community.</p>
+<button>Read more</button>
+<div class="mac_img">
+<img src="https://tse4.mm.bing.net/th/id/OIP.r_Bevm33b37JvLRvsYFDYAHaE8?pid=Api&P=0&h=180" alt="loading...">
+</div>
+        </section>
+        <section class="video_section" id="video">
+            <div class="container3">
+                <h3>A world of entertainement. Available whereever you are.</h3>
+                <p>MyTunes offers a rich collection of official music videos, live concerts, and lyric videos to enhance your listening experience with visuals.
+
+Watch your favorite artists perform live or enjoy cinematic music videos directly on the platform.
+Explore exclusive behind-the-scenes footage and video interviews for added entertainment.
+Video playlists let you stream hours of non-stop entertainment, perfect for parties or relaxation.
+MyTunes combines sound and visuals to deliver a truly immersive musical entertainment experience.</p>
+            </div>
+        </section>
+         <div class="card_content">
+        <section class="gift_card" id="fgift">
+            <div class="container4" >
+                <img src="https://tse3.mm.bing.net/th/id/OIP.HyyAyAa36CikgJpIVt722gHaFg?pid=Api&P=0&h=180" alt="loading...">
+            </div>
+            <div class="gift_content">
+                <h3>Gift Card</h3>
+                <p>A MyTunes Gift Card lets your friends and family enjoy their favorite music, videos, and playlists anytime.
+The perfect present for music lovers — easy to send, fun to spend.
+Redeemable for songs, albums, premium subscriptions, and more on MyTunes.
+Surprise someone with the freedom to choose their own soundtrack.
+Music is a feeling — and a MyTunes Gift Card helps you gift that feeling effortlessly.</p>
+                <p>Already have an Orange Music Gift card?</p>
+                <hr>
+                <button>Redeem</button>
+            </div>
+        </section>
+        </div>
+    </main>
+    <footer>
+        <section class="footer_upper">
+            <div class="container5">
+                <div class="footer_links">
+                    <h4>Shop & Learn</h4>
+                    <ul>
+                        <li>Music</li>
+                        <li>Movies</li>
+                        <li>Shows</li>
+                        <li>Apps</li>
+                        <li>Gift Card</li>
+                    </ul>
+                </div>
+                <div class="footer_links">
+                    <h4>Orange Store</h4>
+                    <ul>
+                        <li>Find a Store</li>
+                        <li>Today at Orange</li>
+                        <li>Orange Camp</li>
+                        <li>Financiing</li>
+                        <li>Order Status</li>
+                    </ul>
+                </div>
+                <div class="footer_links">
+                    <h4>Education & Buisness</h4>
+                    <ul>
+                        <li>Orange & Education</li>
+                        <li>Shop for Collage</li>
+                        <li>Orange & Buisness</li>
+                        <li>Shop for Buisness</li>
+                        <li>Jobs</li>
+                    </ul>
+                </div>
+                <div class="footer_links">
+                    <h4>About Orange</h4>
+                    <ul>
+                        <li>Newsroom</li>
+                        <li>Orange Leadership</li>
+                        <li>Investors</li>
+                        <li>Events</li>
+                        <li>Contact Orange</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+       <section class="footer_lower">
+        <p>Copyright <I>Satyam kumar</I></p>
+       </section>
+    </footer>
+</body>
+</html>
